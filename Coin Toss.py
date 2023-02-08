@@ -1,5 +1,6 @@
+# import the name of the file, not the name of the class
 import CoinClass as c
-
+# the as c means you can refer to the coin class as just c now
 
 # The main function.
 def main():

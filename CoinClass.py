@@ -7,6 +7,7 @@ class Coin:
     # The _ _init_ _ method initializes the
     # sideup data attribute with 'Heads'.
 
+    # self will always be the first parameter we need
     def __init__(self):
         self.sideup = 'Heads'
 
@@ -15,6 +16,7 @@ class Coin:
     # is 0, then sideup is set to 'Heads'.
     # Otherwise, sideup is set to 'Tails'.
 
+    # Mutator method is a method that can change the value of an attribute
     def toss(self):
         if random.randint(0, 1) == 0:
             self.sideup = 'Heads'
