@@ -9,7 +9,8 @@ class Coin:
 
     # self will always be the first parameter we need
     def __init__(self):
-        self.sideup = 'Heads'
+        #The 2 underscores hides it
+        self.__sideup = 'Heads'
 
     # The toss method generates a random number
     # in the range of 0 through 1. If the number
@@ -19,12 +20,12 @@ class Coin:
     # Mutator method is a method that can change the value of an attribute
     def toss(self):
         if random.randint(0, 1) == 0:
-            self.sideup = 'Heads'
+            self.__sideup = 'Heads'
         else:
-            self.sideup = 'Tails'
+            self.__sideup = 'Tails'
 
     # The get_sideup method returns the value
     # referenced by sideup.
 
     def get_sideup(self):
-            return self.sideup
+            return self.__sideup
