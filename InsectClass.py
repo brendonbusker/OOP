@@ -14,5 +14,6 @@ class Insect:
     def get_miles(self):
         return self.flight
     
+    # return means its an accessor method
     def get_name(self):
         return self.name
